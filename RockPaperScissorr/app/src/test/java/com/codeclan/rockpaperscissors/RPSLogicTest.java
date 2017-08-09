@@ -22,7 +22,7 @@ public class RPSLogicTest {
     @Test
     public void canPickWinnerRockVPaper(){
         userChoice = "Paper";
-        assertEquals("User Wins", RPSLogic.winnerIs(userChoice, computerChoice));
+        assertEquals("user", RPSLogic.winnerIs(userChoice, computerChoice));
     }
 
 }
