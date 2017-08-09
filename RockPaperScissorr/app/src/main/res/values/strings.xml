@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RockPaperScissors</string>
+    <string name="pick">Pick an option</string>
+
 </resources>
