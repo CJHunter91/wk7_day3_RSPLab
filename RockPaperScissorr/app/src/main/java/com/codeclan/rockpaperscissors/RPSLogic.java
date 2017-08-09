@@ -1,5 +1,8 @@
 package com.codeclan.rockpaperscissors;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  * Created by user on 09/08/2017.
  */
@@ -50,4 +53,19 @@ public class RPSLogic {
 
         return winner;
     }
+
+    public static ArrayList<String> getArray(){
+        ArrayList<String> options = new ArrayList<>();
+        options.add("rock");
+        options.add("paper");
+        options.add("scissors");
+        return options;
+    }
+
+    public static String computerChoice(){
+        Random index = new Random();
+        return getArray().get(index.nextInt(2));
+    }
+
+
 }

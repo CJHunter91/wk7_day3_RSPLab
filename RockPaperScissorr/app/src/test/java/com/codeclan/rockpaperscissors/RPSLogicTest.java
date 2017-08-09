@@ -3,6 +3,8 @@ package com.codeclan.rockpaperscissors;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -23,6 +25,13 @@ public class RPSLogicTest {
     public void canPickWinnerRockVPaper(){
         userChoice = "Paper";
         assertEquals("user", RPSLogic.winnerIs(userChoice, computerChoice));
+    }
+
+    @Test
+    public void canComputerReturnRPS(){
+        ArrayList<String> rpsArray = RPSLogic.getArray();
+        computerChoice = RPSLogic.computerChoice();
+        assertEquals(true, rpsArray.contains(computerChoice));
     }
 
 }
